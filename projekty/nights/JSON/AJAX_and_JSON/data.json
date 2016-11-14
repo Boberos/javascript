@@ -1,0 +1,10 @@
+{	
+	"author": "example author 1",
+	"title" : "Example title",
+	"links" : [
+			
+			{ "facebook" : "http://facebook.com" },
+			{ "twitter"  : "http://twitter.com" },
+			{ "youtube"  : "http://www.youtube.com" }
+		]
+}

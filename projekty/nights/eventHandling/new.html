@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" >
+ <head>
+      <title>Simple Event Example</title>
+ <script type="text/javascript">
+ function addEventHandler(oNode, evt, oFunc, bCaptures)
+ {
+ if (typeof(oNode.attachEvent) != "undefined")
+  		oNode.attachEvent("on"+evt, oFunc);
+ 	else
+ 		oNode.addEventListener(evt, oFunc, bCaptures);
+ }
+ function removeEventHandler(oNode, evt, oFunc, bCaptures) {
+     if (typeof (oNode.detachEvent) != "undefined")
+         oNode.detachEvent("on" + evt, oFunc);
+     else
+         oNode.removeEventListener(evt, oFunc, bCaptures);
+ }
+ function getEventTarget(e) {
+     if ((window.event) && (window.event.srcElement)) return window.event.srcElement;
+     else return e.target;
+ }
+ 
+ function onLinkClicked(e) {
+     alert("You clicked the link!");
+ }
+ function onEnableClick(e) {
+     var target = getEventTarget(e);
+     if (target.checked)
+        addEventHandler(document.getElementById("clickLink"), "click", onLinkClicked, false);
+     else
+         removeEventHandler(document.getElementById("clickLink"), "click", onLinkClicked, false);
+ }
+ 
+ function setUpClickEvent(e) {
+     addEventHandler(document.getElementById("Checkbox1"), "click", onEnableClick, false);
+ }
+ 
+ addEventHandler(window, "load", setUpClickEvent, false);
+ </script>
+ </head>
+<body>
+ <a href="#" title="click me" id="clickLink">Click Me!</a>
+     <p>
+         <input id="Checkbox1" type="checkbox" />Enable click events</p>
+ </body>
+ </html>

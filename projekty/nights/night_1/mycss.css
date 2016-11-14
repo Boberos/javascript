@@ -1,0 +1,10 @@
+div#hello { 
+	width: 380px;
+	height: 380px;
+	background-image: url("drunk.png");
+	background-repeat: no-repeat;
+	color: green;
+	text-align: center;
+	font-size: 18px;
+	 position: fixed;
+	}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="application/javascript">
+function draw() {
+	  var canvas = document.getElementById("canvas");
+	  if (canvas.getContext){
+	    var ctx = canvas.getContext('2d');
+
+	    // Filled triangle
+	    ctx.beginPath();
+	    ctx.moveTo(25,25);
+	    ctx.lineTo(105,25);
+	    ctx.lineTo(25,105);
+	    ctx.fill();
+
+	    // Stroked triangle
+	    ctx.beginPath();
+	    ctx.moveTo(125,125);
+	    ctx.lineTo(125,45);
+	    ctx.lineTo(45,125);
+	    ctx.closePath();
+	    ctx.stroke();
+	  }
+	}</script>
+<title>Insert title here</title>
+</head>
+ <body onload="draw();">
+   <canvas id="canvas" width="150" height="150"></canvas><br/>
+<h4>SyntaxEDIT</h4>
+<p>window.moveTo(x, y) </p>
+<h4>Parameters</h4>
+
+<p id="b">x</p> <p>is the horizontal coordinate to be moved to.</p>
+<p id="b">y</p> <p>is the vertical coordinate to be moved to.</p>
+
+<h4>SyntaxEDIT</h4>
+<p>void ctx.lineTo(x, y);</p>
+<h4>Parameters</h4>
+
+<p id="b">x</p> <p>The x axis of the coordinate for the end of the line.</p>
+<p id="b">y</p> <p>The y axis of the coordinate for the end of the line.</p>
+
+</body>
+</html>

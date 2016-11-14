@@ -1,0 +1,8 @@
+div#content { 
+	width: 380px;
+	height: 380px;
+	color: green;
+	text-align: center;
+	font-size: 18px;
+	 position: fixed;
+	}

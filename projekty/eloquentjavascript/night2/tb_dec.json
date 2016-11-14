@@ -1,0 +1,72 @@
+{
+"regula_01" :  
+{
+		"liczba_drzwi" : "2",
+		"Moc_silnika" : "60",
+		"Kolor" : "niebieski",
+		"Marka" : "Opel"
+},
+"regula_02" :  
+{
+		"liczba_drzwi" : "2",
+		"Moc_silnika" : "100",
+		"Kolor" : "czarny",
+		"Marka" : "Nissan"
+},
+"regula_03" :  
+{
+		"liczba_drzwi" : "2",
+		"Moc_silnika" : "200",
+		"Kolor" : "czarny",
+		"Marka" : "Ferrari"
+},
+"regula_04" :  
+{
+		"liczba_drzwi" : "2",
+		"Moc_silnika" : "200",
+		"Kolor" : "czerwony",
+		"Marka" : "Ferrari"
+},
+"regula_05" :  
+{
+		"liczba_drzwi" : "2",
+		"Moc_silnika" : "200",
+		"Kolor" : "czerwony",
+		"Marka" : "Opel"
+},
+"regula_06" :  
+{
+		"liczba_drzwi" : "3",
+		"Moc_silnika" : "60",
+		"Kolor" : "czerwony",
+		"Marka" : "Opel"
+},
+"regula_07" :  
+{
+		"liczba_drzwi" : "3",
+		"Moc_silnika" : "60",
+		"Kolor" : "czerwony",
+		"Marka" : "Opel"
+},
+"regula_08" :  
+{
+		"liczba_drzwi" : "3",
+		"Moc_silnika" : "60",
+		"Kolor" : "czerwony",
+		"Marka" : "Ferrari"
+},
+"regula_09" :  
+{
+		"liczba_drzwi" : "4",
+		"Moc_silnika" : "60",
+		"Kolor" : "Niebieski",
+		"Marka" : "Nissan"
+},
+"regula_10" :  
+{
+		"liczba_drzwi" : "4",
+		"Moc_silnika" : "60",
+		"Kolor" : "Niebieski",
+		"Marka" : "Nissan"
+}
+}

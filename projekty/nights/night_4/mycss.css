@@ -1,0 +1,10 @@
+div#container { 
+	width: 160px;
+	margin: auto;
+	border: 2px solid lightgrey;
+	text-align: center;
+	}
+div#inputArea{
+	margin: auto;
+	text-align: center;
+	}

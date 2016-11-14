@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Form Sample</title>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+
+<!--[if lt IE 8]>
+	<style>
+		legend {
+			display: block;
+			padding: 0;
+			padding-top: 30px;
+			font-weight: bold;
+			font-size: 1.25em;
+			color: #FFD98D;
+			margin: 0 auto;
+		}
+	</style>
+<![endif]-->
+
+
+</head>
+<body>
+<form id="myform" name="theform" class="group" action="#" method="POST">
+	<fieldset id="Changes" title="Other Info">
+		<legend>Pop-up Navigation</legend>
+		<span id="formerror" class="error"></span>
+		<ol>
+			<li>
+				<label for="reference">Navigate to</label>
+				<select name="reference" id="reference">
+					<option>Choose...</option>
+					<option value="http://facebook.com">Facebook</option>
+					<option value="http://youtube.com">You Tube</option>
+					<option value="http://facebook.com">Facebook one more time</option>
+				</select>
+			</li>
+		</ol>
+	</fieldset>
+</form>
+<script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
+
+
+
+
+
+

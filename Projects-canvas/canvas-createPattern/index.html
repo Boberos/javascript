@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="application/javascript">
+function draw() {
+	  var ctx = document.getElementById('canvas').getContext('2d');
+
+	  // create new image object to use as pattern
+	  var img = new Image();
+	  img.src = 'Bricks_8bit_16px.jpg';
+	  img.onload = function(){
+
+	    // create pattern
+	    var ptrn = ctx.createPattern(img,'repeat');
+	    ctx.fillStyle = ptrn;
+	    ctx.fillRect(0,0,1200,1200);
+
+	  }
+	}
+</script>
+<title>Insert title here</title>
+</head>
+<body onload="draw();">
+	<canvas id="canvas" width="1200" height="1200"></canvas>
+</body>
+</html>
